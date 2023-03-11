@@ -1,0 +1,40 @@
+.up,
+.down {
+  display: flex;
+  align-items: center;
+}
+
+.up::before,
+.down::before {
+  content: "";
+  margin-right: 4px;
+  width: 0;
+  height: 0;
+}
+
+.up::before {
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 10px solid #28c76f;
+}
+
+.down::before {
+  border-top: 10px solid #ea5455;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+}
+
+.chart-container {
+  position: relative;
+}
+
+.chart-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  top: calc(50% - 3px/2 - 0.5px);
+
+  background: #4a4556;
+  border-radius: 999px;
+}

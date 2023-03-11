@@ -1,0 +1,28 @@
+.area-chart {
+  width: 640px;
+  height: 356px;
+
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  flex-direction: row;
+}
+
+.area-chart > * {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+
+  background: #6e4bef;
+
+  clip-path: polygon(
+    0% calc(100% * (1 - var(--start))),
+    100% calc(100% * (1 - var(--end))),
+    100% 100%,
+    0% 100%
+  );
+}
+
+ul.area-chart {
+  list-style: none;
+}

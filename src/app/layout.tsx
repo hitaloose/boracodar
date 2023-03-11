@@ -1,18 +1,29 @@
-import './globals.css'
+import "../styles/global.css";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+type Props = {
+  children: React.ReactNode;
+};
+
+export const metadata = {
+  title: {
+    default: "Hitalo Loose",
+    template: "%s | Hitalo Loose",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+export default function Layout({ children }: Props) {
   return (
-    <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
+    <html lang="pt-br">
       <head />
-      <body>{children}</body>
+      <body className="bg-[#1e1e1e]">
+        <div className="h-screen flex items-center justify-center">
+          {children}
+        </div>
+      </body>
     </html>
-  )
+  );
 }

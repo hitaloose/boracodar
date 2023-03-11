@@ -1,0 +1,7 @@
+.with-divider::before {
+  content: "";
+  height: 24px;
+  width: 1px;
+  top: 1;
+  background-color: black;
+}

@@ -1,0 +1,22 @@
+.dot-secondary,
+.dot-primary {
+  display: flex;
+  align-items: center;
+}
+
+.dot-secondary::before,
+.dot-primary::before {
+  content: "";
+  margin-right: 4px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.dot-primary::before {
+  background-color: #ce9ffc;
+}
+
+.dot-secondary::before {
+  background-color: rgba(217, 217, 217, 0.1);
+}

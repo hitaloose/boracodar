@@ -1,0 +1,7 @@
+.bar {
+  width: 15px;
+  background: linear-gradient(180deg, #90f7ec 0%, #32ccbc 100%);
+  border-radius: 999px;
+  margin-bottom: 5px;
+  z-index: 10;
+}
