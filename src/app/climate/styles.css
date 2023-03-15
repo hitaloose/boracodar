@@ -1,0 +1,10 @@
+.bg-blur {
+  z-index: -1;
+  position: absolute;
+  filter: blur(20px);
+
+  overflow: hidden;
+
+  left: 0px;
+  top: 0px;
+}
