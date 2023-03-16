@@ -7,6 +7,7 @@ export default function Page() {
       <Link href="/dashboard">Dashboard</Link>
       <Link href="/currency_converter">Currency Converter</Link>
       <Link href="/climate">Climate</Link>
+      <Link href="/login">Login</Link>
     </main>
   );
 }
