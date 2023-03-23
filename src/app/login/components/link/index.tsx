@@ -8,7 +8,7 @@ export const Link = (props: Props) => {
 
   return (
     <a
-      className="text-[#7C3AED] font-semibold hover:underline focus:underline"
+      className="text-[#7C3AED] font-semibold cursor-pointer hover:underline focus:underline"
       href={href}
     >
       {children}
